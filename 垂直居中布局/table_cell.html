@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table-cell布局</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .parent {
+      height: 500px;
+      width: 200px;
+      display: table-cell;  /*设置当前元素为td元素（单元格）*/
+      vertical-align: middle; /*文本内容垂直方向居中对齐*/
+      background-color: lightcoral;
+    }
+    .child {
+      height: 200px;
+      background-color: lightskyblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+</body>
+</html>

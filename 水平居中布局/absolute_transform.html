@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>定位加transform属性居中</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .parent {
+      width: 100%;
+      height: 300px;
+      position: relative; /*相对定位*/
+      background-color: lightcoral;
+    }
+    .child {
+      width: 300px;
+      height: 300px; 
+      position: absolute; /*绝对定位*/
+      left: 50%; 
+      transform: translateX(-50%);
+      background-color: lightskyblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+</body>
+</html>
