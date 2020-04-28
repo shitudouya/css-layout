@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex实现</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-width: 970px;
+      }
+      header,
+      footer {
+        background: rgba(29, 27, 27, 0.726);
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+      }
+
+      .container {
+        display: flex;
+      }
+      .container .column {
+        text-align: center;
+        height: 300px;
+        line-height: 300px;
+      }
+      .container .center {
+        flex: 1;
+        background: rgb(206, 201, 201);
+      }
+      .container .left {
+        width: 200px;
+        background: rgba(95, 179, 235, 0.972);
+      }
+      .container .right {
+        width: 150px; 
+        background: rgb(231, 105, 2);
+      }
+    </style>
+  </head>
+  <body>
+    <header>header</header>
+    <div class="container">
+      <div class="left column">left</div>
+      <div class="center column">center</div>
+      <div class="right column">right</div>
+    </div>
+    <footer>footer</footer>
+  </body>
+</html>

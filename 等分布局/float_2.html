@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float_2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .wrap {
+      overflow: hidden;
+    }
+    .parent {
+      overflow: hidden;
+      margin-right: -20px;
+    }
+    .child {
+      float: left;
+      height: 100px;
+      width: calc(25% - 20px);
+      margin-right: 20px;
+
+    }
+    .parent .one {
+      background-color: lightpink;
+    }
+    .parent .two {
+      background-color: lightsalmon;
+    }
+    .parent .three {
+      background-color: lightblue;
+    }
+    .parent .four {
+      background-color: lightskyblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="parent">
+      <div class="child one">1</div>
+      <div class="child two">2</div>
+      <div class="child three">3</div>
+      <div class="child four">4</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table实现</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .parent {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+      }
+      .left,.right,.center {
+        display: table-cell;
+      }
+      .left {
+        background-color: lightsalmon;
+      }
+      .right {
+        background-color: lightcoral;
+      }
+      .center {
+        background-color: lightskyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="left">
+        <p>left</p>
+      </div>
+      <div class="center">
+        <p>center</p>
+        <p>center</p>
+        <p>center</p>
+      </div>
+      <div class="right">
+        <p>right</p>
+      </div>
+    </div>
+  </body>
+</html>
