@@ -1,0 +1,59 @@
+html {
+  background-color: #ccc;
+}
+body {
+  max-width: 750px;
+  min-width: 320px;
+  background-color: #fff;
+  margin: auto;
+}
+header {
+  position: relative;
+  height: 0.8rem;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0.5333rem;
+  line-height: 0.8rem;
+}
+header .icon-back,
+header .icon-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.5333rem;
+  height: 0.5333rem;
+  font-size: 0.4rem;
+  cursor: pointer;
+}
+header .icon-menu {
+  left: auto;
+  right: 0;
+}
+header h2 {
+  text-align: center;
+  font-size: 0.4rem;
+}
+section {
+  text-align: center;
+}
+section img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0.5333rem auto;
+}
+section p {
+  font-size: 0.32rem;
+  font-weight: 700;
+  color: #333;
+}
+section a {
+  display: block;
+  width: 1.3333rem;
+  height: 0.6667rem;
+  border: 0.0267rem solid red;
+  color: red;
+  font-weight: 600;
+  font-size: 0.2667rem;
+  line-height: 0.64rem;
+  border-radius: 0.1067rem;
+  margin: 0.5333rem auto;
+}

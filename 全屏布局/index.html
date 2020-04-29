@@ -4,8 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>全屏布局</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      overflow: hidden;
+    }
+    header {
+      height: 60px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: lightcoral;
+    }
+    .container {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 60px;
+      bottom: 60px;
+      overflow-y: auto;
+      background-color: lightsalmon;
+    }
+    .container .aside {
+      width: 200px;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 60px;
+      bottom: 60px;
+      background-color: lightseagreen;
+    }
+    .container .content {
+      margin-left: 200px;
+    }
+    footer {
+      height: 60px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: lightskyblue;
+    }
+
+  </style>
 </head>
 <body>
-  
+  <header>header</header>
+  <div class="container">
+    <div class="aside">aside</div>
+    <div class="content">content</div>
+  </div>
+  <footer>footer</footer>
 </body>
 </html>
